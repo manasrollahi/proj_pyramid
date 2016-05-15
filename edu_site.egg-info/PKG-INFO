@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: edu-site
+Version: 0.0
+Summary: edu_site
+Home-page: UNKNOWN
+Author: mohammad ali nasrollahi
+Author-email: ma.nasrollahi71@yahoo.com
+License: UNKNOWN
+Description: edu_site README
+        
+        
+        0.0
+        ---
+        
+        -  Initial version
+        
+Keywords: web pyramid pylons
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
