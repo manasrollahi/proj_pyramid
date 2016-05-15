@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR"><head>
+	<meta charset="UTF-8">
+	   <title metal:define-slot="title"
+        tal:content="context/title | python:None"> Title goes here </title>
+   <meta tal:attributes="description context/description | python:None">
+
+   <!--?<link rel="stylesheet" href="/site/css/screen.css" media="screen">-->
+   <!--?<link rel="stylesheet" href="/site/css/print.css" media="print">-->
+
+   <metal:slot metal:define-slot="script" />
+   <metal:slot metal:define-slot="css" />
+
+
+	<script src="${request.static_url('edu_site:js/jquery.js')}"></script>
+			<script type="text/javascript">
+				window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/demo3.parvanweb.ir\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.8"}};
+				!function(a,b,c){
+					function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");
+					return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1
+					}
+					function e(a){var c=b.createElement("script");
+					c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+			</script><script type="text/javascript" src="${request.static_url('edu_site:js/wp-emoji-release.min.js') }" ></script>
+            <script>
+                $(document).ready(function() {
+                var stickyNavTop = $('.msticktop').offset().top;
+                var stickyNav = function(){
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > stickyNavTop) {
+                    $('.msticktop').addClass('sticky');
+                } else {
+                    $('.msticktop').removeClass('sticky');
+                }};
+                stickyNav();
+                $(window).scroll(function() {stickyNav();});});
+                </script>
+
+
+		<style type="text/css">
+			img.wp-smiley,
+			img.emoji {
+				display: inline !important;
+				border: none !important;
+				box-shadow: none !important;
+				height: 1em !important;
+				width: 1em !important;
+				margin: 0 .07em !important;
+				vertical-align: -0.1em !important;
+				background: none !important;
+				padding: 0 !important;
+			}
+            .msticktop{
+                padding-right: 25px;
+            }
+            .sticky {
+                position: fixed;
+                width: 100%;
+                left: 0;
+                right:0;
+                top: 0;
+                padding-right: 130px;
+                z-index: 10000;
+                border-top: 0;
+                background: rgba(55,55,55,0.57);
+                }
+		</style>
+
+    <link rel="stylesheet"  href="${request.static_url('edu_site:css/wpp.css')}" type="text/css" media="all">
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+    <link href="${request.static_url('edu_site:css/bootstrap.rtl.min.css')}" rel="stylesheet">
+    <link href="${request.static_url('edu_site:css/bootstrap.css')}" rel="stylesheet">
+    <link href="${request.static_url('edu_site:css/bootstrap-responsive.css')}" rel="stylesheet">
+	<link href="${request.static_url('edu_site:css/font-awesome.min.css')}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="${request.static_url('edu_site:css/style.css')}">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+
+</head>
+
+<body>
+
+<div id="header">
+	<div class="logo">
+		<div class="container">
+			<div class="hidden-xs col-sm-6 col-md-6 ads">
+				<div class="theader">
+					<div>
+						<div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="col-xs-12 col-sm-6 col-md-6 logo" alt="لوگو" src="${request.static_url('edu_site:img/logoMain.png')}">
+		</div>
+	</div>
+
+<div class="navbarlinks ">
+	<div class="container">
+		<div class="row-fluid msticktop">
+			<div>
+				<div class="menu-%d9%85%d9%88%d8%b6%d9%88%d8%b9%d8%a7%d8%aa-container">
+					<ul id="menu-%d9%85%d9%88%d8%b6%d9%88%d8%b9%d8%a7%d8%aa" class="nav-menu">
+						<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="${request.route_url('#')}"><i class="fa fa-home"></i></a></li>
+						<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28"><a href="${request.route_url('#')}"> فیلم آموزشی </a>
+							<ul class="sub-menu">
+								<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="${request.route_url('#')}">C#</a></li>
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="${request.route_url('#')}">C++</a></li>
+								<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="${request.route_url('#')}">اندروید</a></li>
+								<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="${request.route_url('#')}">HTML</a></li>
+								<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="${request.route_url('#')}"> جی کوئری </a></li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="${request.route_url('#')}"> جاوا اسکریپت </a></li>
+								<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="${request.route_url('#')}"> PHP </a></li>
+								<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="${request.route_url('#')}"> ASP.NET </a></li>
+								<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="${request.route_url('#')}"> اسمبلی </a></li>
+								<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="${request.route_url('#')}"> بوت استرپ </a></li>
+							</ul>
+						</li>
+						<li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39"><a href="${request.route_url('#')}"> مقاله </a>
+                            <ul class="sub-menu">
+								<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="${request.route_url('#')}">C#</a></li>
+								<li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="${request.route_url('#')}">C++</a></li>
+								<li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a href="${request.route_url('#')}">اندروید</a></li>
+								<li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="${request.route_url('#')}">HTML</a></li>
+								<li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="${request.route_url('#')}"> جی کوئری </a></li>
+								<li id="menu-item-45" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="${request.route_url('#')}"> جاوا اسکریپت </a></li>
+								<li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="${request.route_url('#')}"> PHP </a></li>
+								<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="${request.route_url('#')}"> ASP.NET </a></li>
+								<li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="${request.route_url('#')}"> اسمبلی </a></li>
+								<li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a href="${request.route_url('#')}"> بوت استرپ </a></li>
+							</ul>
+                        </li>
+						<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50"><a href="${request.route_url('#')}">کتاب و جزوه درسی</a>
+                            <ul class="sub-menu">
+								<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="${request.route_url('#')}">برنامه نویسی</a></li>
+								<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="${request.route_url('#')}">ساختمان داده</a></li>
+								<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53"><a href="${request.route_url('#')}">مدار های منطقی</a></li>
+								<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54"><a href="${request.route_url('#')}">معماری کامپیوتر</a></li>
+								<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55"><a href="${request.route_url('#')}">سیستم های عامل</a></li>
+								<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56"><a href="${request.route_url('#')}">نظریه زبان ها و ماشین ها</a></li>
+								<li id="menu-item-57" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"><a href="${request.route_url('#')}"> طراحی الگوریتم </a></li>
+								<li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a href="${request.route_url('#')}"> ریزپردازنده </a></li>
+								<li id="menu-item-59" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59"><a href="${request.route_url('#')}"> پایگاه داده ها </a></li>
+								<li id="menu-item-60" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-60"><a href="${request.route_url('#')}">  مهندسی اینترنت </a></li>
+								<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="${request.route_url('#')}"> هوش مصنوعی </a></li>
+								<li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62"><a href="${request.route_url('#')}"> مهندسی نرم افزار </a></li>
+							</ul>
+                        </li>
+						<li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63"><a href="${request.route_url('#')}">پروژه آماده</a></li>
+						<li id="menu-item-64" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64"><a href="${request.route_url('#')}"> درخواست آموزش </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+<div style="color:#FFF;font-size:30px;">
+
+	<div class="container">
+		<div class="row-fluid" >
+			<div class="span6" style=" margin-top:10px; text-align:center">
+				<a href="${request.route_url('#')}"><img src="${request.static_url('edu_site:img/unnamed.jpg')}"></a>
+			</div>
+			<div class="span6" style=" margin-top:10px;text-align:center">
+				<a href="${request.route_url('#')}"><img src="${request.static_url('edu_site:img/unnamed.jpg')}"></a>
+			</div>
+		</div>
+		<div class="row-fluid" >
+			<div class="span6" style=" margin-top:10px;text-align:center">
+				<a href="${request.route_url('#')}"><img src="${request.static_url('edu_site:img/unnamed.jpg')}"></a>
+			</div>
+			<div class="span6" style=" margin-top:10px;text-align:center">
+				<a href="${request.route_url('#')}"><img src="${request.static_url('edu_site:img/unnamed.jpg')}"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="span3 rside">
+		<div class="block">
+			<div class="blockin">
+				<div class="title sutunbaslik -baslik widget_baslik">
+					<h3>نرم افزار های مورد نیاز</h3><i class="fa fa-cloud-download i-in-sec-top-tilop23"></i>
+				</div>
+				<div class="line-fooot-box-head" style="border-right-width: 145px;"></div>
+
+				<ul class="app-neces">
+					<li class="row">
+						<a class="col" title="Adobe Flash Player" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/visual-studio.png')}" class="attachment-app wp-post-image" alt="Visual Studio" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="Visual Studio"  href="${request.route_url('#')}">
+									<span class="fa block"> دانلود ویژوال استودیو </span>
+									<span class="en block"> Visual Studio </span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+					<li class="row">
+						<a class="col" title="Intellij Idea" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/intellij-idea.png')}" class="attachment-app wp-post-image" alt="Intellij Idea" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="Intellij Idea" href="${request.route_url('#')}">
+									<span class="fa block"> دانلود اینتلیج آیدیا </span>
+									<span class="en block">Intellij Idea</span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+					<li class="row">
+						<a class="col" title="PyCharm" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/pycharm.png')}" class="attachment-app wp-post-image" alt="PyCharm" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="PyCharm" href="${request.route_url('#')}">
+									<span class="fa block">د دانلود پای چارم</span>
+									<span class="en block">PyCharm</span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+					<li class="row">
+						<a class="col" title="Android Studio" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/android-studio.png')}" class="attachment-app wp-post-image" alt="Android Studio" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="Android Studio" href="${request.route_url('#')}">
+									<span class="fa block">دانلود اندروید استودیو </span>
+									<span class="en block">Android Studio</span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+					<li class="row">
+						<a class="col" title="PhpStorm" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/phpstorm.png')}" class="attachment-app wp-post-image" alt="PhpStorm" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="PhpStorm" href="${request.route_url('#')}">
+									<span class="fa block">دانلود  پی اچ پی استورم</span>
+									<span class="en block">PhpStorm</span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+                    <li class="row">
+						<a class="col" title="NotePade++" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/notepad.png')}" class="attachment-app wp-post-image" alt="NotePade++" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="NotePade++" href="${request.route_url('#')}">
+									<span class="fa block">دانلود نوت پد پلاس پلاس</span>
+									<span class="en block">NotePade++</span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+                    <li class="row">
+						<a class="col" title="Xampp" target="_blank" href="${request.route_url('#')}">
+							<img src="${request.static_url('edu_site:img/xampp.png')}" class="attachment-app wp-post-image" alt="Xampp" height="56" width="56">							</a>
+							<div class="app col">
+								<a title="Xampp" href="${request.route_url('#')}">
+									<span class="fa block">دانلود زمپ</span>
+									<span class="en block">Xampp</span>
+								</a>
+							</div>
+							<!-- .app -->
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="boxadstext_side">
+				<div class="title  sutunbaslik -baslik widget_baslik">
+					<h3>تبلیغات متنی</h3>
+					<i class="fa fa-buysellads i-in-sec-top-tilop23"></i>
+				</div>
+				<div style="padding:20px !important;">
+					<a title="طراحی قالب وردپرس" target="_blank" href="${request.route_url('#')}">طراحی قالب وردپرس</a>
+					<a title="بازی اندروید" target="_blank" href="${request.route_url('#')}">بازی اندروید</a>
+					<a title="سئو وبهینه سازی" target="_blank" href="${request.route_url('#')}">سئو وبهینه سازی</a>
+					<a title="فروش شارژ" target="_blank" href="${request.route_url('#')}">فروش شارژ</a>
+					<a title="فروشگاه آموزش طراحی" target="_blank" href="${request.route_url('#')}">فروشگاه آموزش طراحی</a>
+					<a title="فروشگاه قالب وردپرس" target="_blank" href="${request.route_url('#')}">فروشگاه قالب وردپرس</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="content" class="span5 posts">
+        <metal:slot metal:define-slot="mainpost" />
+        <metal:slot metal:define-slot="art" />
+	</div>
+
+	<div class="span3 lside">
+		<div class="blockintab">
+            <div class="title sutunbaslik -baslik widget_baslik">
+                <h3>برترین های </h3><i class="fa fa-star i-in-sec-top-tilop23"></i>
+            </div>
+            <div class="line-fooot-box-head" style="border-right-width: 145px;"></div>
+			<ul class="tabs">
+				<li class="active col-xs-4 col-sm-4 col-md-4" style="margin-right: 4px ! important;"><a href="#tab1">روزانه</a></li>
+				<li class="col-xs-4 col-sm-4 col-md-4"><a href="#tab2">هفتگی</a></li>
+				<li class="col-xs-4 col-sm-4 col-md-4"><a href="#tab3">ماهانه</a></li>
+			</ul>
+			<div class="tab_container">
+				<div style="display: block;" id="tab1" class="tab_content">
+					<ul class="wpp-list">
+
+<!-- WordPress Popular Posts Plugin v3.2.2 [PHP] [daily] [views] [custom] -->
+
+						<ul class="wpp-list">
+							<li> <a href="${request.route_url('#')}" title=" دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم" class="wpp-post-title" target="_self"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم</a> <span class="wpp-views">8 views</span></li>
+							<li> <a href="${request.route_url('#')}" title=" دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول" class="wpp-post-title" target="_self"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول</a> <span class="wpp-views">2 views</span></li>
+							<li> <a href="${request.route_url('#')}" title="دانلود کتاب Introduction to Algorithms ویرایش سوم " class="wpp-post-title" target="_self">دانلود کتاب Introduction to Algorithms ویرایش سوم </a> <span class="wpp-views">1 view</span></li>
+
+						</ul>
+
+<!-- End WordPress Popular Posts Plugin v3.2.2 -->
+					</ul>
+				</div>
+				<div id="tab2" class="tab_content" style="display:none;">
+					<ul class="wpp-list">
+
+<!-- WordPress Popular Posts Plugin v3.2.2 [PHP] [weekly] [views] [custom] -->
+
+						<ul class="wpp-list">
+							<li> <a href="${request.route_url('#')}" title=" دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم" class="wpp-post-title" target="_self"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم</a> <span class="wpp-views">23 views</span></li>
+							<li> <a href="${request.route_url('#')}" title=" دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول" class="wpp-post-title" target="_self"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول</a> <span class="wpp-views">14 views</span></li>
+							<li> <a href="${request.route_url('#')}" title="دانلود کتاب Introduction to Algorithms ویرایش سوم " class="wpp-post-title" target="_self">دانلود کتاب Introduction to Algorithms ویرایش سوم </a> <span class="wpp-views">8 views</span></li>
+							<li> <a href="${request.route_url('#')}" title="دانلود فیلم آموزش جاوا اسکریپت قسمت اول (آشنایی)" class="wpp-post-title" target="_self">دانلود فیلم آموزش جاوا اسکریپت قسمت اول (آشنایی)</a> <span class="wpp-views">7 views</span></li>
+							<li> <a href="${request.route_url('#')}" title="دانلود کلیک شماره ۵۲۶ – ضمیمه فناوری اطلاعات روزنامه جام جم" class="wpp-post-title" target="_self">دانلود کلیک شماره ۵۲۶ – ضمیمه فناوری اطلاعات روزنامه جام جم</a> <span class="wpp-views">2 views</span></li>
+
+						</ul>
+
+<!-- End WordPress Popular Posts Plugin v3.2.2 -->
+					</ul>
+				</div>
+				<div id="tab3" class="tab_content" style="display:none;">
+					<ul class="wpp-list">
+
+<!-- WordPress Popular Posts Plugin v3.2.2 [PHP] [daily] [views] [custom] -->
+
+						<ul class="wpp-list">
+							<li> <a href="${request.route_url('#')}" title=" دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم" class="wpp-post-title" target="_self"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم</a> <span class="wpp-views">8 views</span></li>
+							<li> <a href="${request.route_url('#')}" title=" دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول" class="wpp-post-title" target="_self"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول</a> <span class="wpp-views">2 views</span></li>
+							<li> <a href="${request.route_url('#')}" title="دانلود کتاب Introduction to Algorithms ویرایش سوم " class="wpp-post-title" target="_self">دانلود کتاب Introduction to Algorithms ویرایش سوم </a> <span class="wpp-views">1 view</span></li>
+
+						</ul>
+
+<!-- End WordPress Popular Posts Plugin v3.2.2 -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="blockin">
+			<div class="title sutunbaslik -baslik widget_baslik">
+				<h3>مطالب تصادفی</h3>
+				<i class="fa fa-random i-in-sec-top-tilop23"></i>
+			</div>
+			<div class="line-fooot-box-head" style="border-right-width: 110px;"></div>
+			<div class="tab_content_sidebar_public">
+
+				<ul class="wpp-list" style="padding:0">
+					<li><a href="${request.route_url('#')}">دانلود کتاب Introduction to Algorithms ویرایش سوم </a></li>
+					<li><a href="${request.route_url('#')}"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم</a></li>
+					<li><a href="${request.route_url('#')}">دانلود کلیک شماره ۵۲۶ – ضمیمه فناوری اطلاعات روزنامه جام جم</a></li>
+					<li><a href="${request.route_url('#')}">دانلود فیلم آموزش جاوا اسکریپت قسمت اول (آشنایی)</a></li>
+					<li><a href="${request.route_url('#')}"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="blockin  widget_style_funcs">
+			<div>
+				<div class="title sutunbaslik -baslik widget_baslik"><h3>نوشته‌های تازه</h3><i class="fa fa-bars i-in-sec-top-tilop23"></i></div>
+				<div class="line-fooot-box-head" style="border-right-width: 110px;"></div>
+				<ul>
+					<li><a href="${request.route_url('#')}"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت دوم</a></li>
+					<li><a href="${request.route_url('#')}"> دانلود فیلم آموزش برنامه نویسی اندروید (ارتباط با دیتابیس) قسمت اول</a></li>
+					<li><a href="${request.route_url('#')}">دانلود فیلم آموزش جاوا اسکریپت قسمت اول (آشنایی)</a></li>
+					<li><a href="${request.route_url('#')}">دانلود کلیک شماره ۵۲۶ – ضمیمه فناوری اطلاعات روزنامه جام جم</a></li>
+			<li>
+				<a href="${request.route_url('#')}">دانلود کتاب Introduction to Algorithms ویرایش سوم </a>
+						</li>
+		</ul>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="footer">
+	<div class="container-fluid footer-bg-cons">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-cpyright-fa">
+			<i class="fa fa-code" style="padding-top:25px;"></i>
+			&nbsp;&nbsp;  طراحی و توسعه:
+			<a href="${request.route_url('#')}">محمد علی نصراللهی</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span style="font-size:18px;font-family:arial;position:relative;top:3px;">©</span>
+			&nbsp;&nbsp;تمامی حقوق مطالب برای  این سایت محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنوع می باشد.
+
+		</div>
+
+	</div>
+
+</div>
+
+	<script src="${request.static_url('edu_site:js/bootstrap.rtl.js')}"></script>
+	<script src="${request.static_url('edu_site:js/custom.js')}"></script>
+	<script src="${request.static_url('edu_site:js/bootstrap.rtl.min.js')}"></script>
+
+
+
+
+
+</body>
+</html>
