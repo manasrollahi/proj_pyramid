@@ -12,6 +12,9 @@ requires = [
     'pyramid',
     'pyramid_chameleon',
     'pyramid_debugtoolbar',
+    'sqlalchemy',
+    'pyramid_tm',
+    'zope.sqlalchemy'
     ]
 
 setup(name='edu_site',
@@ -37,5 +40,6 @@ setup(name='edu_site',
       entry_points="""\
       [paste.app_factory]
       main = edu_site:main
+      initialize_edu_site_db = edu_site.initialize_db:main
       """,
       )

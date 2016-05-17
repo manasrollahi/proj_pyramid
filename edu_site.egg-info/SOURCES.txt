@@ -6,7 +6,7 @@ production.ini
 setup.py
 edu_site/__init__.py
 edu_site/tests.py
-edu_site/views.py
+edu_site/views_main.py
 edu_site.egg-info/PKG-INFO
 edu_site.egg-info/SOURCES.txt
 edu_site.egg-info/dependency_links.txt
@@ -19,6 +19,8 @@ edu_site/css/bootstrap.css
 edu_site/css/bootstrap.rtl.min.css
 edu_site/css/font-awesome.css
 edu_site/css/font-awesome.min.css
+edu_site/css/style-d-responsive.css
+edu_site/css/style-d.css
 edu_site/css/style.css
 edu_site/css/wpp.css
 edu_site/img/android-icon.jpg
@@ -36,7 +38,14 @@ edu_site/img/unnamed.jpg
 edu_site/img/visual-studio.png
 edu_site/img/xampp.png
 edu_site/js/bootstrap.js
+edu_site/js/bootstrap.min.js
 edu_site/js/bootstrap_002.js
+edu_site/js/common-scripts.js
 edu_site/js/custom.js
+edu_site/js/jquery-1.8.3.min.js
 edu_site/js/jquery.js
 edu_site/js/wp-emoji-release.min.js
+edu_site/templates/article.pt
+edu_site/templates/index.pt
+edu_site/templates/m_dash.pt
+edu_site/templates/master.pt

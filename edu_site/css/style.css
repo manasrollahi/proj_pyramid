@@ -1,5 +1,5 @@
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td {
 	border:0;
 	font-family:inherit;
 	font-size:100%;
@@ -31,7 +31,7 @@ body {
 	line-height:4;
 	padding:40px 0
 }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td {
 	border:0;
 	font-family:inherit;
 	font-size:100%;
@@ -63,16 +63,6 @@ body {
 textarea#comment {
 	max-width:100%;
 	border:1px solid #dcdcdc
-}
-#commentform #submit {
-	font-size:13px;
-	padding:8px 10px;
-	color:#fff;
-	padding-top:6px;
-	border:0;
-	background:#bbd325;
-	box-shadow:inset 0 -3px rgba(0,0,0,0.11);
-	outline:0!important
 }
 .post .postin .content {
 	line-height:2
@@ -2326,109 +2316,7 @@ ul.related-post-links-sing li a {
 	font-family:tahoma;
 	font-size:11px
 }
-#commentform input {
-	outline:0!important;
-	width:50%;
-	border:1px solid #dcdcdc;
-	box-shadow:inset 2px 2px 3px rgba(220,220,220,0.13);
-	padding:11px 5px;
-	font-family:tahoma;
-	font-size:11px;
-	line-height:11px;
-	position:relative;
-	top:-1px;
-	padding-top:12px
-}
-#commentform p:nth-child(1):before {
-	content:"\f007";
-	width:37px;
-	display:inline-block;
-	font:normal normal normal 14px/1 FontAwesome;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	transform:translate(0,0);
-	padding:10px;
-	border:1px solid #dcdcdc;
-	margin-left:-1px;
-	position:relative;
-	text-align:center;
-	top:0;
-	background-color:#f8f8f8;
-	color:#9D9D9D
-}
-#commentform label,.logged-in #commentform p:before {
-	display:none
-}
-#commentform p:nth-child(2):before {
-	content:"\f003";
-	display:inline-block;
-	font:normal normal normal 14px/1 FontAwesome;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	transform:translate(0,0);
-	padding:10px;
-	border:1px solid #dcdcdc;
-	margin-left:-1px;
-	position:relative;
-	top:0;
-	background-color:#f8f8f8;
-	text-align:center;
-	width:37px;
-	color:#9D9D9D
-}
-#commentform p:nth-child(3):before {
-	content:"\f0c1";
-	display:inline-block;
-	font:normal normal normal 14px/1 FontAwesome;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	transform:translate(0,0);
-	padding:10px;
-	border:1px solid #dcdcdc;
-	margin-left:-1px;
-	position:relative;
-	top:0;
-	background-color:#f8f8f8;
-	text-align:center;
-	color:#9D9D9D;
-	width:37px
-}
-#commentform textarea {
-	outline:0!important;
-	width:100%;
-	border:1px solid #dcdcdc;
-	box-shadow:inset 2px 2px 3px rgba(220,220,220,0.13);
-	padding:5px;
-	font-family:tahoma
-}
-#commentform p {
-	margin-bottom:10px
-}
-#commentform {
-	margin-top:20px
-}
-#commentform #submit {
-	text-align:left;
-	font-size:15px;
-	padding:8px 10px;
-	color:#fff;
-	border:0;
-	background:#2ecc71;
-	box-shadow:inset 0 -3px rgba(0,0,0,0.11);
-	outline:0!important;
-	font-family:wpt;
-	padding:15px 10px 15px 10px;
-	text-align:center
-}
-#commentform #submit:hover {
-	opacity:.9
-}
+
 #respond {
 	border-top:1px dashed #DFDFDF;
 	padding-top:25px;
@@ -2474,3 +2362,4 @@ ul.related-post-links-sing li a {
 	border:none;
 	margin-bottom:50px
 }
+

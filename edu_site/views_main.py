@@ -7,7 +7,7 @@ from pyramid.view import (
 
 
 @view_defaults(renderer='templates/index.pt')
-class Views:
+class Views_main:
     def __init__(self, request):
         self.request = request
 
@@ -19,6 +19,21 @@ class Views:
     def article(self):
         arct_name=self.request.matchdict['artc_name']
         return {'pagetitle': arct_name}
+
+
+
+    @view_config(route_name='mdash' , renderer='templates/m_dash.pt')
+    def dashbord(self):
+        return {'pagetitle': 'داشبورد'}
+
+    @view_config(route_name='log' , renderer='templates/login.pt')
+    def login(self):
+        return {'pagetitle': 'ورود به مدیریت سایت'}
+
+    @view_config(route_name='edu' , renderer='templates/edu.pt')
+    def edu(self):
+        pt="درخواست آموزش"
+        return {'pagetitle': pt}
 
     # @view_config(route_name='#')
     # def artc(self):

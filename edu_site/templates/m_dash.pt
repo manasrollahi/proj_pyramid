@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <meta name="keyword" content="">
+
+      <title > ${pagetitle} </title>
+
+      <link href="${request.static_url('edu_site:css/bootstrap.rtl.min.css')}" rel="stylesheet">
+      <link href="${request.static_url('edu_site:css/bootstrap.css')}" rel="stylesheet">
+      <link href="${request.static_url('edu_site:css/bootstrap-responsive.css')}" rel="stylesheet">
+      <link href="${request.static_url('edu_site:css/font-awesome.min.css')}" rel="stylesheet">
+      <link href="${request.static_url('edu_site:css/font-awesome.css')}" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="screen" href="${request.static_url('edu_site:css/style1.css')}">
+      <link rel="stylesheet" type="text/css" media="screen" href="${request.static_url('edu_site:css/style1-responsive.css')}">
+
+
+  </head>
+
+  <body>
+
+  <section id="container" class="">
+      <!--header start-->
+      <header class="header white-bg">
+            <!--logo start-->
+            <a href="${request.route_url('home')}" class="logo">نمایش<span> سایت</span></a>
+            <!--logo end-->
+            <div class="top-nav ">
+                <!--search & user info start-->
+                <ul class="nav pull-left top-menu">
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="img/avatar1_small.jpg">
+                            <span class="username"> نام کاربری </span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li><a href="#"><i class=" icon-suitcase"></i>پروفایل</a></li>
+                            <li><a href="#"><i class="icon-cog"></i> تنظیمات</a></li>
+                            <li><a href="login.html"><i class="fa-key"></i> خروج</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+      <!--header end-->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" href="#">
+                          <i class="icon-dashboard"></i>
+                          <span>صفحه اصلی</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon-book"></i>
+                          <span>نوشته ها</span>
+                          <span class="arrow"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="#">نوشته جدید</a></li>
+                          <li><a class="" href="#">ویرایش و حذف</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon-film"></i>
+                          <span>چند رسانه ای</span>
+                          <span class="arrow"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="#">عکس</a></li>
+                          <li><a class="" href="#">فیلم</a></li>
+                          <li><a class="" href="#">فایل</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="" href="#">
+                          <i class="icon-pencil"></i>
+                          <span>درخواست های کاربران </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="#">
+                          <i class="icon-comments"></i>
+                          <span>نظرات کاربران</span>
+                      </a>
+                  </li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+  </section>
+
+  <section id="main-content">
+      <section class="wrapper">
+
+
+      </section>
+  </section>
+
+
+  <script src="${request.static_url('edu_site:js/jquery.js')}"></script>
+  <script src="${request.static_url('edu_site:js/jquery-1.8.3.min.js')}"></script>
+  <script src="${request.static_url('edu_site:js/bootstrap.min.js')}"></script>
+  <script src="${request.static_url('edu_site:js/common-scripts.js')}"></script>
+
+
+
+
+
+  </body>
+</html>

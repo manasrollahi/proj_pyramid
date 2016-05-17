@@ -1,0 +1,40 @@
+<metal:macro use-macro="master">
+    <metal:slot metal:fill-slot="title">
+        <title>${pagetitle}</title>
+    </metal:slot>
+    <metal:slot metal:fill-slot="edu">
+
+         <div class="title">
+                    <h2>درخواست آموزش </h2>
+                </div>
+                <div class="content">
+                    <div id="respond">
+
+                        <form role="form" action="#" method="post" id="commentform">
+
+                            <div class="form-group">
+                                <label>نام </label>
+                                <input class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>پست الکترونیکی</label>
+                                <input class="form-control"/>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label> توضیح درخواست </label>
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+
+                            <div class="form-group"><input class="btn btn-success" value="فرستادن " type="submit">
+                                <input name="comment_post_ID" value="20" id="comment_post_ID" type="hidden">
+                                <input name="comment_parent" id="comment_parent" value="0" type="hidden">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+    </metal:slot>
+</metal:macro>
